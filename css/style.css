@@ -1,0 +1,112 @@
+.wrapper {
+	background-color: #d8ffff;
+	font-family: "Dosis", cursive;
+}
+
+/* HEADER */
+#header {
+	background-color: #d8ffff;
+}
+
+#title {
+	font-family: "Shadows Into Light", cursive;
+	text-align: center;
+	font-size: 5em;
+	position: relative;
+	bottom: 10px;
+}
+
+/* SCORE */
+#score {
+	background-color: #60f20c;
+}
+
+#scoreText {
+	text-align: center;
+}
+/* CENTRAL */
+
+#central {
+	padding-top: 10px;
+}
+
+.jerseyContainer {
+	height: 350px;
+	width: 250px;
+	margin: 0 auto;
+}
+
+.jerseyImages {
+	border: 1px solid black;
+}
+
+.inputContainer {
+	width: 250px;
+	margin: 0 auto;
+}
+
+.inputAnswer {
+	width: 100%;
+	position: relative;
+	top: 3px;
+	text-transform: uppercase;
+}
+
+.buttonContainer {
+	width: 250px;
+	margin: 0 auto;
+
+}
+
+.btn-success {
+	width: 100%;
+}
+
+.feedbackNegativo {
+	color: red;
+	text-align: center;
+}
+
+.feedbackPositivo {
+	color: green;
+	text-align: center;
+}
+
+.answerImage {
+	display: none;
+}
+
+/* LEVELS BANNER */
+#levelOne, #levelTwo {
+	text-align: center;
+	font-family: "Shadows Into Light", cursive;
+	background-color: black;
+	color: white;
+}
+
+#levelOne h3, #levelTwo h3 {
+	font-size: 2em; 
+}
+
+/* LEVEL 2 */
+#levelTwoRows {
+	background-color: #d8ffff;
+	color: black;
+	display: none;
+}
+
+#feedbackLevelTwo {
+	font-size: 1.5em;
+	font-family: "Dosis", cursive;
+}
+
+#feedbackLevelTwoContainer {
+	display: none;
+}
+
+/* FOOTER */
+
+#footer {
+	background-color: #d8ffff;
+	text-align: center;
+}

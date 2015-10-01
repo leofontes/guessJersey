@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <!-- BASICS -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Leonardo Fontes</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--STYLES-->
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <!--FONT AWESOME CDN-->
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <!-- FONTS -->
+        <link href='http://fonts.googleapis.com/css?family=Dosis|Shadows+Into+Light' rel='stylesheet' type='text/css'>
+        <!-- jQuery -->
+        <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/smoothness/jquery-ui.css" />
+        <script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/jogo.js"></script>
+    </head>
+     
+    <body>
+        <div class="wrapper">
+            <!-- HEADER -->
+            <div id="header">
+                <div class="container">
+                    <h1 id="title">Guess the Jersey</h2>
+                </div>
+            </div>
+            <!-- SCORE -->
+            <div id="score">
+                <div class="container">
+                    <h3 id="scoreText">Your score so far is: 0 points</h3>
+                </div>
+            </div>
+            <!-- CENTRAL -->
+            <div id="central">
+                <div class="container">
+                    <div id="levelOne"><h3>Level One</h3></div>
+                    <div class="row">
+                        <!-- CANUCKS -->
+                        <div class="col-md-4">
+                            <div class="jerseyContainer" id="canucksContainer">
+                                <img src="img/vancouverCanucks/desafioMini.png" id="canucksJersey" class="jerseyImages">
+                            </div>
+                            <div class="inputContainer">
+                                <input type="text" class="inputAnswer" id="canucksInput">
+                            </div>
+                            <div class="buttonContainer">
+                                <button type="button" class="btn btn-success" id="canucksButton">Check your Answer</button>
+                            </div>
+                            <div class="feedback" id="canucksFeedback"><p></p></div>
+                        </div>
+                        <!-- LA KINGS -->
+                        <div class="col-md-4">
+                            <div class="jerseyContainer" id="kingsContainer">
+                                <img src="img/laKings/desafioMini.png" id="kingsJersey" class="jerseyImages">
+                            </div>
+                            <div class="inputContainer">
+                                <input type="text" class="inputAnswer" id="kingsInput">
+                            </div>
+                            <div class="buttonContainer">
+                                <button type="button" class="btn btn-success" id="kingsButton">Check your Answer</button>
+                            </div>
+                            <div class="feedback" id="kingsFeedback"><p></p></div>
+                        </div>
+                        <!-- REAL MADRID -->
+                        <div class="col-md-4">
+                            <div class="jerseyContainer" id="realContainer">
+                                <img src="img/real/desafioMini.png" id="realJersey" class="jerseyImages">
+                            </div>
+                            <div class="inputContainer">
+                                <input type="text" class="inputAnswer" id="realInput">
+                            </div>
+                            <div class="buttonContainer">
+                                <button type="button" class="btn btn-success" id="realButton">Check your Answer</button>
+                            </div>
+                            <div class="feedback" id="realFeedback"><p></p></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- SAN FRANCISCO GIANTS -->
+                        <div class="col-md-4">
+                            <div class="jerseyContainer" id="sfGiantsContainer">
+                                <img src="img/sfGiants/desafioMini.png" id="sfGiantsJersey" class="jerseyImages">
+                            </div>
+                            <div class="inputContainer">
+                                <input type="text" class="inputAnswer" id="sfGiantsInput">
+                            </div>
+                            <div class="buttonContainer">
+                                <button type="button" class="btn btn-success" id="sfGiantsButton">Check your Answer</button>
+                            </div>
+                            <div class="feedback" id="sfGiantsFeedback"><p></p></div>
+                        </div>
+                        <!-- NY RANGERS -->
+                        <div class="col-md-4">
+                            <div class="jerseyContainer" id="rangersContainer">
+                                <img src="img/nyRangers/desafioMini.png" id="rangersJersey" class="jerseyImages">
+                            </div>
+                            <div class="inputContainer">
+                                <input type="text" class="inputAnswer" id="rangersInput">
+                            </div>
+                            <div class="buttonContainer">
+                                <button type="button" class="btn btn-success" id="rangersButton">Check your Answer</button>
+                            </div>
+                            <div class="feedback" id="rangersFeedback"><p></p></div>
+                        </div>
+                        <!-- MAN UNITED -->
+                        <div class="col-md-4">
+                            <div class="jerseyContainer" id="unitedContainer">
+                                <img src="img/manUtd/desafioMini.png" id="unitedJersey" class="jerseyImages">
+                            </div>
+                            <div class="inputContainer">
+                                <input type="text" class="inputAnswer" id="unitedInput">
+                            </div>
+                            <div class="buttonContainer">
+                                <button type="button" class="btn btn-success" id="unitedButton">Check your Answer</button>
+                            </div>
+                            <div class="feedback" id="unitedFeedback"><p></p></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <!-- SAO PAULO -->
+                        <div class="col-md-4">
+                            <div class="jerseyContainer" id="saoPauloContainer">
+                                <img src="img/saoPaulo/desafioMini.png" id="saoPauloJersey" class="jerseyImages">
+                            </div>
+                            <div class="inputContainer">
+                                <input type="text" class="inputAnswer" id="saoPauloInput">
+                            </div>
+                            <div class="buttonContainer">
+                                <button type="button" class="btn btn-success" id="saoPauloButton">Check your Answer</button>
+                            </div>
+                            <div class="feedback" id="saoPauloFeedback"><p></p></div>
+                        </div>
+                        <!-- PHILADELPHIA FLYERS -->
+                        <div class="col-md-4">
+                            <div class="jerseyContainer" id="flyersContainer">
+                                <img src="img/flyers/desafioMini.png" id="flyersJersey" class="jerseyImages">
+                            </div>
+                            <div class="inputContainer">
+                                <input type="text" class="inputAnswer" id="flyersInput">
+                            </div>
+                            <div class="buttonContainer">
+                                <button type="button" class="btn btn-success" id="flyersButton">Check your Answer</button>
+                            </div>
+                            <div class="feedback" id="flyersFeedback"><p></p></div>
+                        </div>
+                        <!-- PSG -->
+                        <div class="col-md-4">
+                            <div class="jerseyContainer" id="psgContainer">
+                                <img src="img/psg/desafioMini.png" id="psgJersey" class="jerseyImages">
+                            </div>
+                            <div class="inputContainer">
+                                <input type="text" class="inputAnswer" id="psgInput">
+                            </div>
+                            <div class="buttonContainer">
+                                <button type="button" class="btn btn-success" id="psgButton">Check your Answer</button>
+                            </div>
+                            <div class="feedback" id="psgFeedback"><p></p></div>
+                        </div>
+                    </div>
+                    <div id="levelTwo">
+                        <h3>Level Two</h3>
+                        <div id="feedbackLevelTwoContainer"><p id="feedbackLevelTwo">Oops, you must have 70 points to play Level Two!</p></div>
+                        <div id="levelTwoRows">
+                            <h2>Coming Soon!</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- FOOTER -->
+            <div id="footer">
+                <div class="container">
+                    <h4>Guess the Jersey is an educational project developed by <a href="http://www.leofontes.me">Leonardo Fontes</a> in Floripa - 2014</h4>
+                </div>
+            </div>
+        </div>
+        <script>
+            $(document).ready( function() {
+
+            })  
+        </script>
+    </body>
+</html>
